@@ -10,13 +10,7 @@ import { useState } from 'react';
     { id: 3, title: "To Kill a Mockingbird", author: "Harper Lee", genre: "Classic" },
   ]);
 
-  //adding a new book
-  const addBook = () => {
-    if (newBook.title && newBook.author && newBook.genre){
-        setBooks([...books, {id: books.length + 1, ...newBook}]);
-        setNewBook({title: "", author: "", genre: ""});
-    }
-  }
+
 
   //initialising states
   const [search, setSearch] = useState("");
@@ -24,7 +18,11 @@ import { useState } from 'react';
   const [sortBy, setSortBy] = useState("title"); //sort by title
 
     return (
-      <div>App</div>
+      <div>
+      <input/>
+      <input/>
+      <input/>
+      </div>
     )
   }
   
