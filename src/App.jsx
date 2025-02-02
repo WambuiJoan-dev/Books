@@ -19,9 +19,29 @@ import { useState } from 'react';
 
     return (
       <div>
-      <input/>
-      <input/>
-      <input/>
+      {/* Add Book Form */}
+      <h3>Add a New Book</h3>
+      <input
+        type="text"
+        placeholder="Title"
+        value={newBook.title}
+        onChange={(e) => setNewBook({ ...newBook, title: e.target.value })}
+        className="input-field"
+      />
+      <input
+        type="text"
+        placeholder="Author"
+        value={newBook.author}
+        onChange={(e) => setNewBook({ ...newBook, author: e.target.value })}
+        className="input-field"
+      />
+      <input
+        type="text"
+        placeholder="Genre"
+        value={newBook.genre}
+        onChange={(e) => setNewBook({ ...newBook, genre: e.target.value })}
+        className="input-field"
+      />
       </div>
     )
   }
