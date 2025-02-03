@@ -26,6 +26,20 @@ import { useState } from 'react';
 
     return (
       <div>
+
+      {/* Book List */}
+      <ul>
+        {sortedBooks.length > 0 ? (
+          sortedBooks.map((book) => (
+            <li key={book.id}>
+              <strong>{book.title}</strong> by {book.author} ({book.genre})
+            </li>
+          ))
+        ) : (
+          <p>No books found</p>
+        )}
+      </ul>
+
       {/* Add Book Form */}
       <h3>Add a New Book</h3>
       <input
