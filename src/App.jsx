@@ -38,6 +38,16 @@ import { useState } from 'react';
     return (
       <div>
 
+    {/* Sorting Dropdown */}
+      <select
+        value={sortBy}
+        onChange={(e) => setSortBy(e.target.value)}
+        className="sort-dropdown"
+      >
+        <option value="title">Sort by Title</option>
+        <option value="author">Sort by Author</option>
+      </select>
+
       {/* Book List */}
       <ul>
         {sortedBooks.length > 0 ? (
