@@ -1,7 +1,7 @@
   import React from 'react'
 import { useState } from 'react';
   
-  function App = () => {
+  const App = () => {
 
   // Initial books data
   const [books, setBooks] = useState([
