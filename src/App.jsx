@@ -11,7 +11,6 @@ import { useState } from 'react';
   ]);
 
 
-
   //initialising states
   const [search, setSearch] = useState("");
   const [newBook, setNewBook] = useState({ title: "", author: "", genre: ""});
@@ -42,11 +41,14 @@ import { useState } from 'react';
         onChange={(e) => setNewBook({ ...newBook, genre: e.target.value })}
         className="input-field"
       />
+      <button onClick = {addBook} className="add-button" >
+      Add Book
+      </button>
       </div>
-    )
+    );
   }
   
-  export default App
+  export default App;
   
 
 
