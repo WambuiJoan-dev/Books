@@ -16,6 +16,14 @@ import { useState } from 'react';
   const [newBook, setNewBook] = useState({ title: "", author: "", genre: ""});
   const [sortBy, setSortBy] = useState("title"); //sort by title
 
+  //add new book
+  const addBook = () => {
+    if (newBook.title && newBook.author && newBook.genre) {
+      setBooks([...books, {id: books.length + 1, ...newBook}]);
+      setNewBook({title: "", author: "", genre: ""});
+    }
+  }
+
     return (
       <div>
       {/* Add Book Form */}
