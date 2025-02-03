@@ -91,3 +91,13 @@ li:hover {
   cursor: pointer;
   transition: 0.3s;
 }
+.add-button:hover {
+  background: #6d4425;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+}
