@@ -65,3 +65,17 @@ li {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
+li:hover {
+  transform: scale(1.03);
+}
+
+/* Add Book Form */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8b5e3c;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 14px;
+}
