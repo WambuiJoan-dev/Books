@@ -30,7 +30,7 @@ h2 {
 
 /* Search Bar */
 .search-bar {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #8b5e3c;
   border-radius: 8px;
@@ -41,7 +41,7 @@ h2 {
 
 /* Dropdown (Sorting) */
 .sort-dropdown {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #8b5e3c;
   border-radius: 8px;
@@ -67,11 +67,12 @@ li {
 }
 li:hover {
   transform: scale(1.03);
+  background-color: #c84b0c58;
 }
 
 /* Add Book Form */
 .input-field {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #8b5e3c;
   border-radius: 8px;
@@ -81,7 +82,7 @@ li:hover {
 }
 /* Add Button */
 .add-button {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: none;
   border-radius: 8px;
