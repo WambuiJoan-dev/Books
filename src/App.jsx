@@ -23,7 +23,10 @@ import { useState } from 'react';
       setNewBook({title: "", author: "", genre: ""});
     }
   }
-
+  // Sort books based on the selected option
+  const sortedBooks = [...filteredBooks].sort((a, b) =>
+    a[sortBy].localeCompare(b[sortBy])
+  );
     return (
       <div>
 
