@@ -22,7 +22,15 @@ import { useState } from 'react';
       setBooks([...books, {id: books.length + 1, ...newBook}]);
       setNewBook({title: "", author: "", genre: ""});
     }
-  }
+  };
+
+  // Filter books based on search input
+  const filteredBooks = books.filter(
+    (book) =>
+      book.title.toLowerCase().includes(search.toLowerCase()) ||
+      book.genre.toLowerCase().includes(search.toLowerCase())
+  );
+
   // Sort books based on the selected option
   const sortedBooks = [...filteredBooks].sort((a, b) =>
     a[sortBy].localeCompare(b[sortBy])
