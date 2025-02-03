@@ -38,6 +38,15 @@ import { useState } from 'react';
     return (
       <div>
 
+        {/* Search Bar */}
+      <input
+        type="text"
+        placeholder="Search by title or genre..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="search-bar"
+      />
+
     {/* Sorting Dropdown */}
       <select
         value={sortBy}
