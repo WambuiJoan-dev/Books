@@ -27,3 +27,27 @@ h2 {
   color: #8b5e3c;
   margin-bottom: 10px;
 }
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8b5e3c;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Dropdown (Sorting) */
+.sort-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #8b5e3c;
+  border-radius: 8px;
+  background: #fff5eb;
+  color: #4d2c1c;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
