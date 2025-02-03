@@ -36,7 +36,8 @@ import { useState } from 'react';
     a[sortBy].localeCompare(b[sortBy])
   );
     return (
-      <div>
+      <div className = "container">
+      <h2>My Digital Liblary</h2>
 
         {/* Search Bar */}
       <input
